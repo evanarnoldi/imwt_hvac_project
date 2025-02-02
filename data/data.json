@@ -1,0 +1,396 @@
+{
+"meta": {
+    "title": "History of Video Game Consoles",
+    "description": "An exhibition of video games consoles throughout the years, showcasing their evolution.",
+    "narrativesList": ["Home Console", "Handheld Console", "1st Generation", "2nd Generation", "3rd Generation", "4th Generation", "5th Generation", "6th Generation", "7th Generation", "8th Generation", "9th Generation", "Magnafox", "Atari", "Mattel", "Microsoft", "Nintendo", "Sega", "Sony", "Valve", "Africa", "Central Asia", "East Asia", "Europe", "North America", "Oceania", "South America", "South East Asia", "Worldwide"],
+    "defaultNarrative": "Home Console",
+    "defaultStart": 0,
+    "defaultText" : "basic"
+},
+"items": {
+    "1": {
+        "title": "Magnafox Odyssey",
+        "year": "1972",
+        "type": "Home Console",
+        "generation" : "1st Generation",
+        "developer": "Magnafox",
+        "regions": "Europe, North America",
+        "img": "images/narr/img-1.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "1st Generation", "Magnafox", "Europe", "North America"]
+    },
+    "2": {
+        "title": "Atari 2600",
+        "year": "1977",
+        "type": "Home Console",
+        "generation" : "2nd Generation",
+        "developer": "Atari",
+        "regions": "Africa, East Asia,  Europe, North America, South America",
+        "img": "images/narr/img-2.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "2nd Generation", "Atari", "Africa", "East Asia", "Europe", "North America", "South America"]
+    },
+    "3": {
+        "title": "Intellivision",
+        "year": "1979",
+        "type": "Home Console",
+        "generation" : "2nd Generation",
+        "developer": "Mattel",
+        "regions": "Africa, East Asia,  Europe, North America, South America",
+        "img": "images/narr/img-3.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "2nd Generation", "Mattel", "Africa", "East Asia", "Europe", "North America", "South America"]
+    },
+    "4": {
+        "title": "Nintendo Entertainment System (NES)",
+        "year": "1983",
+        "type": "Home Console",
+        "generation" : "3rd Generation",
+        "developer": "Nintendo",
+        "regions": "Central Asia, East Asia,  Europe, North America, South America",
+        "img": "images/narr/img-4.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "3rd Generation", "Nintendo", "Central Asia", "East Asia", "Europe", "North America", "South America"]
+    },
+    "5": {
+        "title": "Sega Genesis",
+        "year": "1988",
+        "type": "Home Console",
+        "generation" : "4th Generation",
+        "developer": "Sega",
+        "regions": "Central Asia, East Asia,  Europe, North America, South America",
+        "img": "images/narr/img-5.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "4th Generation", "Sega", "Central Asia", "East Asia", "Europe", "North America", "South America"]
+    },
+    "6": {
+        "title": "Game Boy",
+        "year": "1989",
+        "type": "Handheld Console",
+        "generation" : "4th Generation",
+        "developer": "Nintendo",
+        "regions": "Africa, East Asia,  Europe, North America, South America",
+        "img": "images/narr/img-6.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Handheld Console", "4th Generation", "Nintendo", "Africa", "East Asia", "Europe", "North America", "South America"]
+    },
+    "7": {
+        "title": "Sony PlayStation",
+        "year": "1994",
+        "type": "Home Console",
+        "generation" : "5th Generation",
+        "developer": "Sony",
+        "regions": "Worldwide",
+        "img": "images/narr/img-7.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "5th Generation", "Sony", "Worldwide"]
+    },
+    "8": {
+        "title": "Xbox",
+        "year": "2001",
+        "type": "Home Console",
+        "generation" : "6th Generation",
+        "developer": "Microsoft",
+        "regions": "East Asia, Europe, North America",
+        "img": "images/narr/img-8.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "6th Generation", "Microsoft", "East Asia", "Europe", "North America"]
+    },
+    "9": {
+        "title": "Game Boy Advance",
+        "year": "2001",
+        "type": "Handheld Console",
+        "generation" : "6th Generation",
+        "developer": "Nintendo",
+        "regions": "East Asia, Europe, North America",
+        "img": "images/narr/img-9.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Handheld Console", "6th Generation", "Nintendo", "East Asia", "Europe", "North America"]
+    },
+    "10": {
+        "title": "Nintendo DS",
+        "year": "2004",
+        "type": "Handheld Console",
+        "generation" : "7th Generation",
+        "developer": "Nintendo",
+        "regions": "East Asia, Europe, North America, Oceania",
+        "img": "images/narr/img-10.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Handheld Console", "7th Generation", "Nintendo", "East Asia", "Europe", "North America", "Oceania"]
+    },
+    "11": {
+        "title": "Sony PlayStation 3",
+        "year": "2006",
+        "type": "Home Console",
+        "generation" : "7th Generation",
+        "developer": "Sony",
+        "regions": "Central Asia, East Asia, Europe, North America, South America, South East Asia",
+        "img": "images/narr/img-11.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "7th Generation", "Sony", "Central Asia", "East Asia", "Europe", "North America", "South America", "South East Asia"]
+    },
+    "12": {
+        "title": "Sony PlayStation 4",
+        "year": "2013",
+        "type": "Home Console",
+        "generation" : "8th Generation",
+        "developer": "Sony",
+        "regions": "East Asia, Europe, North America",
+        "img": "images/narr/img-12.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "8th Generation", "Sony", "East Asia", "Europe", "North America"]
+    },
+    "13": {
+        "title": "Nintendo Switch",
+        "year": "2017",
+        "type": "Handheld Console",
+        "generation" : "8th Generation",
+        "developer": "Nintendo",
+        "regions": "Worldwide",
+        "img": "images/narr/img-13.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Handheld Console", "8th Generation", "Nintendo", "Worldwide"]
+    },
+    "14": {
+        "title": "Xbox Series X & S",
+        "year": "2020",
+        "type": "Home Console",
+        "generation" : "9th Generation",
+        "developer": "Microsoft",
+        "regions": "Worldwide",
+        "img": "images/narr/img-14.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Home Console", "9th Generation", "Microsoft", "Worldwide"]
+    },
+    "15": {
+        "title": "Steam Deck",
+        "year": "2022",
+        "type": "Handheld Console",
+        "generation" : "9th Generation",
+        "developer": "Valve",
+        "regions": "Worldwide",
+        "img": "images/narr/img-15.png",
+        "text": {
+            "basic": "<p>short desc</p>",
+            "extended": "<p>short desc + mid desc</p>",
+            "long": "<p>short desc + mid desc + long desc</p>"
+        },
+        "includedIn": ["Handheld Console", "9th Generation", "Valve", "Worldwide"]
+    }
+},
+"narratives": {
+    "Home Console": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "11",
+        "12",
+        "14"
+    ],
+    "Handheld Console": [
+        "6",
+        "9",
+        "10",
+        "13",
+        "15"
+    ],
+    "1st Generation": [
+        "1"
+    ],
+    "2nd Generation": [
+        "2",
+        "3"
+    ],
+    "3rd Generation": [
+        "4"
+    ],
+    "4th Generation": [
+        "5",
+        "6"
+    ],
+    "5th Generation": [
+        "7"
+    ],
+    "6th Generation": [
+        "8",
+        "9"
+    ],
+    "7th Generation": [
+        "10",
+        "11"
+    ],
+    "8th Generation": [
+        "12",
+        "13"
+    ],
+    "9th Generation": [
+        "14",
+        "15"
+    ],
+    "Magnafox": [
+        "1"
+    ],
+    "Atari": [
+        "2"
+    ],
+    "Mattel": [
+        "3"
+    ],
+    "Microsoft": [
+        "8",
+        "14"
+    ],
+    "Nintendo": [
+        "4",
+        "6",
+        "9",
+        "10",
+        "13"
+    ],
+    "Sega": [
+        "5"
+    ],
+    "Sony": [
+        "7",
+        "11",
+        "12"
+    ],
+    "Valve": [
+        "15"
+    ],
+    "Africa": [
+        "2",
+        "3",
+        "6"
+    ],
+    "Central Asia": [
+        "4",
+        "5",
+        "11"
+    ],
+    "East Asia": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+    ],
+    "Europe": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+    ],
+    "North America": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14"
+    ],
+    "Oceania": [
+        "10"
+    ],
+    "South America": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "11"
+    ],
+    "South East Asia": [
+        "11"
+    ],
+    "Worldwide": [
+        "7",
+        "13",
+        "14",
+        "15"
+    ]
+}
+}

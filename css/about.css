@@ -1,0 +1,64 @@
+.page-title {
+  position: relative;
+  display: inline-block;
+  overflow: wrap;
+}
+
+.page-title-section {
+  padding: 35px;
+  text-align: center;
+}
+
+#card-container {
+  max-width: 30%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card {
+  flex: 1;
+  background-color: var(--quaternary-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3{
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.card-content p{
+  font-size: 17px;
+  line-height: 1;
+}
+
+@media screen and (max-width:768px){
+  .card {
+    flex:100%
+  }
+}
+
+
+
+

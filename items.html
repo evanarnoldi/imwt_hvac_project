@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Items | HVAC Exhibition</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icons/hvac-logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Motiva+Sans:wght@700&family=Merriweather:wght@400&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/items.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="robots" content="noindex">
+</head>
+<body>
+
+</div>  
+    
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--secondary-color);" aria-label="Main navigation">
+          <div class="container">
+              <a href="index.html" class="navbar-brand">
+                  <img src="images/icons/hvac-logo-full.png" alt="Logo" width="126px" height="79px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a href="explore.html" class="nav-link">EXPLORE</a>                    
+                      </li>
+                      <li class="nav-item">
+                          <a href="timeline.html" class="nav-link">TIMELINE</a>                    
+                      </li>
+                      <li class="nav-item">
+                          <a href="map.html" class="nav-link">MAP</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="items.html" class="nav-link">ITEMS</a>
+                  
+                      </li>                        
+                      <li class="nav-item">
+                          <a href="about.html" class="nav-link">ABOUT</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+<div class = "page-title-section">
+  <h1 class="page-title">Items</h1>
+</div>
+
+<nav class="navbar navbar-expand-lg" id="search-menu">
+  <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchNavbar" aria-controls="searchNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="searchNavbar">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"></li>
+          <a class="nav-link">Category:</a>
+          <a class="nav-link" href="#" onclick="updateCollectionTab('Timeline'); return false;">By Timeline</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+          <!-- Type -->
+          <a class="nav-link dropdown-toggle" href="#" id="typeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Type
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="typeDropdown">
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Home Console'); return false;">Home Console</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Handheld Console'); return false;">Handheld Console</a></li>
+          </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+          <!-- Generation -->
+          <a class="nav-link dropdown-toggle" href="#" id="generationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Generation
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="generationDropdown">
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('1st Generation'); return false;">1st Generation</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('2nd Generation'); return false;">2nd Generation</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('3rd Generation'); return false;">3rd Generation</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('4th Generation'); return false;">4th Generation</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('5th Generation'); return false;">5th Generation</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('6th Generation'); return false;">6th Generation</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('7th Generation'); return false;">7th Generation</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('8th Generation'); return false;">8th Generation</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('9th Generation'); return false;">9th Generation</a></li>
+          </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+          <!-- Developer -->
+          <a class="nav-link dropdown-toggle" href="#" id="developerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Developer
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="developerDropdown">
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Atari'); return false;">Atari</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Magnafox'); return false;">Magnafox</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Mattel'); return false;">Mattel</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Microsoft'); return false;">Microsoft</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Nintendo'); return false;">Nintendo</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Sega'); return false;">Sega</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Sony'); return false;">Sony</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Valve'); return false;">Valve</a></li>
+          </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+          <!-- Regions Released -->
+          <a class="nav-link dropdown-toggle" href="#" id="regionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Regions Released
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="regionsDropdown">
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Africa'); return false;">Africa</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Central Asia'); return false;">Central Asia</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('East Asia'); return false;">East Asia</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Europe'); return false;">Europe</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('North America'); return false;">North America</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Oceania'); return false;">Oceania</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('South America'); return false;">South America</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('South East Asia'); return false;">South East Asia</a></li>
+              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Worldwide'); return false;">Worldwide</a></li>
+          </ul>
+          </li>
+
+          </ul>
+      </div>
+      </div>
+    </nav>
+
+    <script>
+      function updateCollectionTab(narrative) {
+        document.querySelector('.current-narrative').textContent = narrative;
+      }
+    </script>
+
+  <main class="container-fluid justify-content-center">
+
+    <section id="image-display" class="row">
+      <div id="image-wrapper">
+        <div class="offcanvas offcanvas-end" style="background-color: rgba(0, 0 ,0, 0.8);" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h4 class="offcanvas-title current-narrative text-white" id="offcanvasExampleLabel">List</h4>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div id="artwork-list" class="d-flex flex-column"></div>
+        </div>
+
+        <!-- Overlay Navbar -->
+
+        <div id="wrapper-header" class="justify-content-between d-flex">
+          <button id="return-button" class="btn ms-1 ms-md-2 mt-1 mt-md-2 p-2 text-white d-flex" title="Leave current narrative" onclick="window.location.href = 'explore.html'">
+            <svg id="Слой_1" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="20" class="align-self-center me-1">
+              <path clip-rule="evenodd" d="M31.106,15H3.278l8.325-8.293  c0.391-0.391,0.391-1.024,0-1.414c-0.391-0.391-1.024-0.391-1.414,0l-9.9,9.899c-0.385,0.385-0.385,1.029,0,1.414l9.9,9.9  c0.391,0.391,1.024,0.391,1.414,0c0.391-0.391,0.391-1.024,0-1.414L3.278,17h27.828c0.552,0,1-0.448,1-1  C32.106,15.448,31.658,15,31.106,15z" fill="#ffffff" fill-rule="evenodd" id="Arrow_Back"></path><g></g><g></g><g></g><g></g><g></g><g></g>
+            </svg>
+            <span class="d-none d-md-flex text-white">Explore Again</span>
+          </button>
+          <h6 class="current-artwork d-inline text-white text-center p-2">-</h6>
+          <button id="offcanvas-button" class="btn d-flex text-white me-1 me-md-2 mt-1 mt-md-2 p-2" type="button" title="Narrative's list of artworks" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <!--svg by https://freeicons.io/business-and-online-icons/list-icon-icon-3-->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list align-self-center"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg>
+            <span class="ms-1 current-narrative d-none d-md-flex">Collection</span>
+          </button>
+        </div>
+        
+        <img id="artwork-img" class="img-fluid" src="images/icons/hvac-logo.png" alt="Meow">
+        
+        <!-- Overlay Buttons -->
+        <button class="btn back-button" onclick="prevItem()">
+          <!--svg credits: https://freeicons.io/mobile-user-interface/back-return-arrow-undo-turn-back-icon-452871-->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+            <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+          </svg>
+        </button>
+        <button class="btn next-button" onclick="nextItem()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+            <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+          </svg>
+        </button>
+          <!-- Image -->
+      </div>
+    </section>
+
+
+    <section id="info-display" class="row">
+      <div class="col-12 col-md-8 mt-5 ps-md-5">
+
+      <section id="info-box" class="row">
+        <div class="col-12">
+          <hr class="mt-0" style="margin-left: 10%; margin-right: 10%;">
+          <h2 class="m-auto text-center">Details</h2>
+          <hr style="margin-left: 20%; margin-right: 20%;">
+
+            <table class="table table-hover mt-4 mb-0">
+
+              <tr class="description">
+                <th class="label">Name</th>
+                <td class="table-data" id="title">-</td>
+              </tr>
+      
+              <tr class="description">
+                <th class="label">Year of Release</th>
+                <td class="table-data" id="year">-</td>
+              </tr>
+      
+              <tr class="description">
+                <th class="label">Type</th>
+                <td class="table-data" id="type">-</td>
+              </tr>
+      
+              <tr class="description">
+                <th class="label">Generation</th>
+                <td class="table-data" id="generation">-</td>
+              </tr>
+      
+              <tr class="description">
+                <th class="label">Developer</th>
+                <td class="table-data" id="developer">-</td>
+              </tr>
+
+              <tr class="description">
+                <th class="label">Release Regions</th>
+                <td class="table-data" id="regions">-</td>
+              </tr>
+            </table>
+        </div>
+      </section>
+
+      <section id="description" class="row mt-5 mb-5">
+        <div class="col-12">
+          <h5>Description</h5>
+        <div id="info-text" class="mb-4"></div>
+        <div id="button-container" class="d-flex justify-content-around mt-3">
+          <button id="less-button" class="btn btn-sm text-button" value="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+            </svg>
+            Read less
+          </button>
+          <button id="more-button" class="btn btn-sm text-button" value="1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+            </svg>
+            Read more
+          </button>
+        </div>
+        </div>
+      </section>
+
+    </div>
+
+      <section id="side-image" class="col-md-4 d-none d-md-flex justify-content-center hidden">
+        <div class="card align-self-start">
+          <button class="btn back-button" onclick="prevItem()">
+            <!--svg credits: https://freeicons.io/mobile-user-interface/back-return-arrow-undo-turn-back-icon-452871-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+              <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+            </svg>
+          </button>
+          <img id="artwork-img-2" class="p-0 img-fluid" src="images/icons/hvac-logo-full.png" alt="Empty">
+          <button class="btn next-button" onclick="nextItem()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+              <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+            </svg>
+          </button>
+          <div class="card-header text-white w-100">
+            <p class="current-narrative m-0"></p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+</main>
+
+<div class="scroll-buttons">
+  <button class="scroll-button" onclick="scrollToTop()">
+    <svg viewBox="0 0 24 24">
+      <path d="M12 16l-6-6h12z"/>
+    </svg>
+  </button>
+</div>
+
+<!-- Footer -->
+<footer class="footer" aria-label="Footer">
+  <div class="text-center p-3 text-white">
+      <p>&#169; 2025 <a href="#">HVAC - History of Video Games Consoles</a></p>
+      <p>A final project for the course "Information Modeling and Web Technologies" taught by Professor Fabio Vitali</p>
+      <p>For Master's Degree Program "Digital Humanities and Digital Knowledge", University of Bologna</p>
+      <p><a href="doc.html" target="_blank">Project Documentation</a></p>
+  </div>
+</footer>
+<script src="JS/items.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

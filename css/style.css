@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #c7d5e0; /* Text */
+    --secondary-color: #171a21; /* ColorBackground */
+    --tertiary-color: #1b2838; /* Color1 */
+    --quaternary-color: #2a475e; /* Color2 */
+    --quinary-color: #66c0f4; /* Color3 */
+    --footer-color: #2a3653; /* Footer */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+html {
+    font-size: 16px; /* Medium screen default */
+  }
+  
+
+body {
+    font-size: clamp(1rem, 0.8rem + 1vw, 1rem);
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+@media (max-width: 599px) {
+    html {
+        font-size: 15px; /* Adjust font sizes for small screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 18px; /* Larger font sizes on large screens */
+    }
+}
+
+/* Fonts */
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Motiva Sans';
+    font-weight: 700; /* Bold */
+    text-transform: uppercase; /* All capitalization */
+    color: var(--primary-color);
+}
+
+p {
+    font-family: 'Merriweather';
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: clamp(1.6rem, 1.1rem + 2.5vw, 2.074rem);
+}
+
+h4 {
+    font-size: clamp(1.4rem, 1rem + 2vw, 1.728rem);
+}
+
+h5 {
+    font-size: clamp(1.2rem, 0.9rem + 1.5vw, 1.44rem);
+}
+
+h6 {
+    font-size: clamp(1.1rem, 0.85rem + 1.25vw, 1.2rem);
+}
+
+p {
+    font-size: clamp(1rem, 0.8rem + 1vw, 1rem);
+}
+
+/* Heading */
+
+.heading-primary {
+    color: var(--primary-color);
+  }
+  
+.heading-secondary {
+    color: var(--secondary-color);
+  }
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar .navbar-nav .nav-link,
+.nav-link:hover,
+.navbar-brand,
+.nav-item.active .nav-link {
+    color: #c7d5e0 !important; 
+    font-family: 'Roboto';
+}
+
+.navbar-toggler {
+    border-color: rgb(250, 243, 239);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z'/%3E%3C/svg%3E");
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: var(--secondary-color);
+    list-style: none;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    color: var(--primary-color);;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+.dropdown-item:active {
+    --bs-dropdown-link-active-bg: var(--tertiary-color);
+}
+
+/* Responsive Navbar */
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--secondary-color);
+    }
+
+    .navbar-item {
+        margin: 10px 0;
+    }
+
+    .navbar-toggle {
+        display: flex;
+    }
+}
+/* Scrolling */
+.scroll-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.scroll-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--quaternary-color);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px var(--primary-color);
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.scroll-button:hover {
+    background-color: var(--quinary-color);
+}
+
+.scroll-button svg {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 760px) {
+    .scroll-button {
+        width: 35px;
+        height: 35px;
+    }
+
+    .scroll-button svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Footer */
+.footer {
+    background: var(--quaternary-color);
+    padding: 0;
+    position: relative;
+}
+
+.footer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}

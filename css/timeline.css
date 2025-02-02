@@ -1,0 +1,217 @@
+/* Page Title */
+#page-title-section {
+    padding: 35px;
+    text-align: center;
+}
+
+.page-title {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+/* Timeline */
+#timeline-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animation delays for timeline content */
+.content:nth-child(1) { animation-delay: 0.5s; }
+.content:nth-child(2) { animation-delay: 1s; }
+.content:nth-child(3) { animation-delay: 1.5s; }
+.content:nth-child(4) { animation-delay: 2s; }
+.content:nth-child(5) { animation-delay: 2.5s; }
+.content:nth-child(6) { animation-delay: 3s; }
+.content:nth-child(7) { animation-delay: 3.5s; }
+.content:nth-child(8) { animation-delay: 4s; }
+.content:nth-child(9) { animation-delay: 4.5s; }
+.content:nth-child(10) { animation-delay: 5s; }
+.content:nth-child(11) { animation-delay: 5.5s; }
+.content:nth-child(12) { animation-delay: 6s; }
+.content:nth-child(13) { animation-delay: 6.5s; }
+.content:nth-child(14) { animation-delay: 7s; }
+.content:nth-child(15) { animation-delay: 7.5s; }
+.content:nth-child(16) { animation-delay: 8s; }
+.content:nth-child(17) { animation-delay: 8.5s; }
+.content:nth-child(18) { animation-delay: 9s; }
+.content:nth-child(19) { animation-delay: 9.5s; }
+
+.text-box {
+    padding: 50px 30px;
+    position: relative;
+    border-radius: 8px;
+    border: var(--primary-color) 2px solid;
+    background-color: var(--quaternary-color);
+    box-shadow: 0 2px 4px var(--primary-color);
+    text-align: center; /* Adjust content to the middle */
+}
+
+.button {
+    margin-top: 0.625rem;
+    background-color: var(--secondary-color); 
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border-radius: 4px;
+    color: var(--primary-color);
+}
+
+.button:hover {
+    background-color: var(--tertiary-color); 
+}
+
+.button a {
+    color: var(--primary-color);
+}
+
+.left-content {
+    left: 0;
+}
+
+.right-content {
+    left: 50%;
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+    padding: 20px 60px;
+    width: 50%;
+    animation: fadein 0.75s linear forwards;
+    opacity: 0;
+}
+
+.content img {
+    position: absolute;
+    width: 50%;
+    height: 50%; 
+    right: -350px;
+    top: 30px;
+    object-fit: contain; 
+}
+
+.right-content img {
+    left: -350px;
+}
+
+/* Timeline Line */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    background: var(--primary-color);
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    z-index: 0;
+    animation: moveline 8s ease-in-out forwards, fadein 2s ease-in-out forwards;
+}
+
+@keyframes fadein {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.text-box h2 {
+    font-weight: 600;
+}
+
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-content-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 13px solid var(--quaternary-color);
+    right: -15px;
+}
+
+.right-content-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 12px solid var(--quaternary-color);
+    left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+    #timeline-content {
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .content {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+
+    .content img {
+        width: 60px;  
+        height: 60px;
+    }
+
+    .right-content img, .left-content img {
+        left: 2px; 
+    }
+
+    .text-box {
+        font-size: 13px;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .right-content {
+        left: 0;
+    }
+
+
+    .left-content-arrow,
+    .right-content-arrow{
+        border-right: 15px solid var(--quaternary-color);
+        border-left: 0;
+        left: -15px;
+    }
+}
+
