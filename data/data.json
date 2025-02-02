@@ -3,7 +3,7 @@
     "title": "History of Video Game Consoles",
     "description": "An exhibition of video games consoles throughout the years, showcasing their evolution.",
     "narrativesList": ["Home Console", "Handheld Console", "1st Generation", "2nd Generation", "3rd Generation", "4th Generation", "5th Generation", "6th Generation", "7th Generation", "8th Generation", "9th Generation", "Magnafox", "Atari", "Mattel", "Microsoft", "Nintendo", "Sega", "Sony", "Valve", "Africa", "Central Asia", "East Asia", "Europe", "North America", "Oceania", "South America", "South East Asia", "Worldwide"],
-    "defaultNarrative": "Home Console",
+    "defaultNarrative": "Timeline",
     "defaultStart": 0,
     "defaultText" : "basic"
 },
