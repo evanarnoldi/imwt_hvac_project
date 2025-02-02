@@ -18,6 +18,9 @@ const lessButton = document.getElementById("less-button");
 const moreButton = document.getElementById("more-button");
 const text = document.getElementById("info-text");
 const arrowSvg = document.querySelector(".scroll-button > svg")
+const spinner = document.getElementById('loading-spinner');
+
+const showLoading = () => spinner.classList.remove("hide-loading");
 
 document.addEventListener("DOMContentLoaded", async () => {
     const data = await fetch('data/data.json').then(response => response.json());
@@ -132,6 +135,36 @@ async function setNarrativeSwitch(item) {
         const idx = itemNarratives.indexOf(narrativeTitle);
         itemNarratives.splice(idx, 1);
     }
+    document.querySelector(`#geography button`).disabled = narrativeTitle === "Geography";
+    document.querySelector(`#daily button`).disabled = true;
+    document.querySelector(`#supernatural button`).disabled = true;
+    itemNarratives.forEach((i) => { 
+        const button = document.createElement("button");
+        button.classList.add("btn");
+        button.textContent = i; 
+        switch (i) {
+            case "Supernatural":
+            case "Daily":
+                document.querySelector(`#${i.toLowerCase()} button`).disabled = false;
+                break;
+            case "Playing":
+            case "Chilling":
+            case "Hunting":
+                document.querySelector("#daily div.sub-narr").appendChild(button);
+                break;
+            case "Folklore":
+            case "Superstition":
+            case "Religion":
+                document.querySelector("#supernatural div.sub-narr").appendChild(button);
+                break;
+            case "Europe":
+            case "Asia":
+            case "Africa":
+            case "Americas":
+                document.querySelector("#geography div.sub-narr").appendChild(button);
+                break;
+        };
+    });
 }
 
 async function switchNarrative(narrative) {
