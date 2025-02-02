@@ -128,7 +128,7 @@ async function setNarrativeSwitch(item) {
 
     const itemNarratives = [...item.includedIn];
 
-    if (narrativeTitle != "Timeline" && narrativeTitle != "Timeline") {
+    if (narrativeTitle != "Timeline") {
         const idx = itemNarratives.indexOf(narrativeTitle);
         itemNarratives.splice(idx, 1);
     }

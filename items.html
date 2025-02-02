@@ -12,13 +12,6 @@
     <meta name="robots" content="noindex">
 </head>
 <body>
-
-<script>
-    function updateCollectionTab(narrative) {
-      document.querySelector('.current-narrative').textContent = narrative;
-    }
-</script>
-
     
     <!-- Header -->
     <header>
@@ -57,88 +50,6 @@
   <h1 class="page-title">Items</h1>
 </div>
 
-<!-- Category Change Dropdown -->
-<nav class="navbar navbar-expand-lg" id="search-menu">
-  <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchNavbar" aria-controls="searchNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="searchNavbar">
-          <ul class="navbar-nav ms-auto">
-          <li class="nav-item"></li>
-          <a class="nav-link">Category:</a>
-          <a class="nav-link" href="#" onclick="updateCollectionTab('Timeline'); return false;">By Timeline</a>
-          </li>
-          
-          <li class="nav-item dropdown">
-          <!-- Type -->
-          <a class="nav-link dropdown-toggle" href="#" id="typeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Type
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="typeDropdown">
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Home Console'); return false;">Home Console</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Handheld Console'); return false;">Handheld Console</a></li>
-          </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-          <!-- Generation -->
-          <a class="nav-link dropdown-toggle" href="#" id="generationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Generation
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="generationDropdown">
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('1st Generation'); return false;">1st Generation</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('2nd Generation'); return false;">2nd Generation</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('3rd Generation'); return false;">3rd Generation</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('4th Generation'); return false;">4th Generation</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('5th Generation'); return false;">5th Generation</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('6th Generation'); return false;">6th Generation</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('7th Generation'); return false;">7th Generation</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('8th Generation'); return false;">8th Generation</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('9th Generation'); return false;">9th Generation</a></li>
-          </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-          <!-- Developer -->
-          <a class="nav-link dropdown-toggle" href="#" id="developerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Developer
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="developerDropdown">
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Atari'); return false;">Atari</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Magnafox'); return false;">Magnafox</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Mattel'); return false;">Mattel</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Microsoft'); return false;">Microsoft</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Nintendo'); return false;">Nintendo</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Sega'); return false;">Sega</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Sony'); return false;">Sony</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Valve'); return false;">Valve</a></li>
-          </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-          <!-- Regions Released -->
-          <a class="nav-link dropdown-toggle" href="#" id="regionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Regions Released
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="regionsDropdown">
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Africa'); return false;">Africa</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Central Asia'); return false;">Central Asia</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('East Asia'); return false;">East Asia</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Europe'); return false;">Europe</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('North America'); return false;">North America</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Oceania'); return false;">Oceania</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('South America'); return false;">South America</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('South East Asia'); return false;">South East Asia</a></li>
-              <li><a class="dropdown-item" href="#" onclick="updateCollectionTab('Worldwide'); return false;">Worldwide</a></li>
-          </ul>
-          </li>
-
-          </ul>
-      </div>
-      </div>
-    </nav>
-
   <main class="container-fluid justify-content-center">
 
     <section id="image-display" class="row">
@@ -158,7 +69,7 @@
             <svg id="Слой_1" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="20" class="align-self-center me-1">
               <path clip-rule="evenodd" d="M31.106,15H3.278l8.325-8.293  c0.391-0.391,0.391-1.024,0-1.414c-0.391-0.391-1.024-0.391-1.414,0l-9.9,9.899c-0.385,0.385-0.385,1.029,0,1.414l9.9,9.9  c0.391,0.391,1.024,0.391,1.414,0c0.391-0.391,0.391-1.024,0-1.414L3.278,17h27.828c0.552,0,1-0.448,1-1  C32.106,15.448,31.658,15,31.106,15z" fill="#ffffff" fill-rule="evenodd" id="Arrow_Back"></path><g></g><g></g><g></g><g></g><g></g><g></g>
             </svg>
-            <span class="d-none d-md-flex text-white">Explore Again</span>
+            <span class="d-none d-md-flex text-white">Explore More Narrative</span>
           </button>
           <h6 class="current-artwork d-inline text-white text-center p-2">-</h6>
           <button id="offcanvas-button" class="btn d-flex text-white me-1 me-md-2 mt-1 mt-md-2 p-2" type="button" title="Narrative's list of artworks" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -205,7 +116,17 @@
       
               <tr class="description">
                 <th class="label">Year of Release</th>
-                <td class="table-data" id="year">-</td>
+                <td>
+                  <div class="btn-group dropdown-center dropbottom">
+                    <button id="year" type="button" class="btn dropdown-toggle table-data text-black" data-bs-toggle="dropdown" aria-expanded="false">
+                      -
+                    </button>
+                    <ul class="dropdown-menu bg-white border-0">
+                      <li><a id="timeline-switch" class="dropdown-item text-black" role="button">Switch to Timeline narrative</a></li>
+                      <li><a class="dropdown-item text-black" href="timeline.html">Go to Timeline view</a></li>
+                    </ul>
+                  </div>
+                </td>
               </tr>
       
               <tr class="description">
@@ -222,13 +143,19 @@
                 <th class="label">Developer</th>
                 <td class="table-data" id="developer">-</td>
               </tr>
-
+      
               <tr class="description">
                 <th class="label">Release Regions</th>
                 <td class="table-data" id="regions">-</td>
               </tr>
             </table>
         </div>
+      </section>
+
+      <section id="alt-narr" class="row mt-5">
+        <div class="col-12">
+          <div id="buttons-switches" class="row justify-content-between">
+          </div>
       </section>
 
       <section id="description" class="row mt-5 mb-5">
@@ -262,7 +189,7 @@
               <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
             </svg>
           </button>
-          <img id="artwork-img-2" class="p-0 img-fluid" src="images/icons/hvac-logo-full.png" alt="Empty">
+          <img id="artwork-img-2" class="p-0 img-fluid" src="images/icons/placeholder_with_logo.png" alt="Meow">
           <button class="btn next-button" onclick="nextItem()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
               <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
