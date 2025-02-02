@@ -14,12 +14,9 @@
 <body>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        function updateCollectionTab(narrative) {
-            document.querySelector('.current-narrative').textContent = narrative;
-        }
-        window.updateCollectionTab = updateCollectionTab;
-    });
+    function updateCollectionTab(narrative) {
+      document.querySelector('.current-narrative').textContent = narrative;
+    }
 </script>
 
     
@@ -282,7 +279,7 @@
 </main>
 
 <div class="scroll-buttons">
-  <button class="scroll-button" onclick="scrollToTop()">
+  <button class="scroll-button">
     <svg viewBox="0 0 24 24">
       <path d="M12 16l-6-6h12z"/>
     </svg>
