@@ -162,7 +162,6 @@ main {
     border-top-right-radius: 5px;
 }
 #side-image .card {
-    background-color: black;
     position: sticky;
     width: fit-content;
     top:8px;
@@ -177,8 +176,8 @@ main {
     border-bottom-right-radius: 5px;
 }
 button.table-data {
-    border: solid 2px var(--primary-color); 
-    background-color: rgba(255, 255, 255, 0.5); 
+    border: solid 2px black; 
+    background-color: var(--primary-color); 
     width: fit-content;
     text-wrap: pretty;
     text-align: center;
@@ -204,21 +203,6 @@ th, td {
 tbody, td, tfoot, th, thead, tr {
     border: 0px;
 }
-    
-    /* 
-tr {
-    position: relative;
-}
-
-tr::after {
-    content: "";
-    position: absolute;
-    top: 95%;
-    left: 15%;
-    width: 80%; 
-    height: 1px; 
-    background-color: black; 
-} */
 
 .description {
     padding: 0.25rem;
