@@ -154,7 +154,35 @@
 
       <section id="alt-narr" class="row mt-5">
         <div class="col-12">
+          <h5 class="fw-bold text-center mb-4">Categories:</h5>
           <div id="buttons-switches" class="row justify-content-between">
+            <div id="geography" class="col-4">
+              <p>Geography</p>
+              <div class="narr-icon">
+                <button class="btn" title="Geography Narrative" value="Geography">
+                  <img id="geography-img" class="img-fluid" src="images/icons/gIcon.png" alt="Geography Icon">
+                </button>
+              </div>
+              <div class="sub-narr d-flex flex-column"></div>
+            </div>
+            <div id="daily" class="col-4">
+              <p>Daily</p>
+              <div class="narr-icon">
+                <button class="btn" title="Daily Narrative" value="Daily" disabled>
+                  <img class="img-fluid" id="daily-img" src="images/icons/dIcon.png" alt="Daily Icon">
+                </button>
+              </div>
+              <div class="sub-narr d-flex flex-column"></div>
+            </div>
+            <div id="supernatural" class="col-4">
+              <p>Supernatural</p>
+              <div class="narr-icon">
+                <button class="btn" title="Supernatural Narrative" value="Supernatural" disabled>
+                  <img id="supernatural-img"  class="img-fluid" src="images/icons/sIcon.png" alt="Supernatural Icon">
+                </button>
+              </div>
+              <div class="sub-narr d-flex flex-column"></div>
+            </div>
           </div>
       </section>
 
@@ -184,7 +212,6 @@
       <section id="side-image" class="col-md-4 d-none d-md-flex justify-content-center hidden">
         <div class="card align-self-start">
           <button class="btn back-button" onclick="prevItem()">
-            <!--svg credits: https://freeicons.io/mobile-user-interface/back-return-arrow-undo-turn-back-icon-452871-->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
               <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
             </svg>

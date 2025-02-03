@@ -211,56 +211,6 @@ tbody, td, tfoot, th, thead, tr {
 .label {
     font-weight: bold;
 }    
-/* NARRATIVE SWITCH SECTION */
-
-#alt-narr .sub-narr button {
-    color: white;
-    background-color: var(--tertiary-color);
-    min-width: 4.5rem;
-    padding: 4px;
-    margin-top: 1rem;
-    align-self: center;
-    overflow-wrap: break-word;
-}
-#alt-narr .sub-narr button:hover,
-#alt-narr .sub-narr button:active {
-    color: white;
-    background-color: var(--tertiary-color);
-    opacity: 0.8;
-}
-
-
-#alt-narr p {
-    text-align: center;
-    color: black;
-    font-style: italic;
-    font-size: 0.9rem;
-    margin-bottom:0.25rem;
-}
-
-
-.narr-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.narr-icon img {
-    padding: 0.25rem;
-    width: 4rem;
-    height: auto;
-}
-
-.narr-icon button {
-    padding: 4px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: solid 2px var(--secondary-color);
-}
-.narr-icon button:hover {
-    border-color: var(--tertiary-color);
-}
-
 
 /* DESCRIPTION SECTION */
 
