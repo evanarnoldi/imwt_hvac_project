@@ -116,17 +116,8 @@
       
               <tr class="description">
                 <th class="label">Year of Release</th>
-                <td>
-                  <div class="btn-group dropdown-center dropbottom">
-                    <button id="year" type="button" class="btn dropdown-toggle table-data text-black" data-bs-toggle="dropdown" aria-expanded="false">
-                      -
-                    </button>
-                    <ul class="dropdown-menu bg-white border-0">
-                      <li><a id="timeline-switch" class="dropdown-item text-black" role="button">Switch Narrative to Timeline</a></li>
-                      <li><a class="dropdown-item text-black" href="timeline.html">View Timeline</a></li>
-                    </ul>
-                  </div>
-                </td>
+                <td class="table-data" id="year">-</td>
+                <li><a id="timeline-switch" class="dropdown-item text-black" role="button"></a></li>
               </tr>
       
               <tr class="description">
@@ -154,35 +145,7 @@
 
       <section id="alt-narr" class="row mt-5">
         <div class="col-12">
-          <h5 class="fw-bold text-center mb-4">Categories:</h5>
           <div id="buttons-switches" class="row justify-content-between">
-            <div id="geography" class="col-4">
-              <p>Geography</p>
-              <div class="narr-icon">
-                <button class="btn" title="Geography Narrative" value="Geography">
-                  <img id="geography-img" class="img-fluid" src="images/icons/gIcon.png" alt="Geography Icon">
-                </button>
-              </div>
-              <div class="sub-narr d-flex flex-column"></div>
-            </div>
-            <div id="daily" class="col-4">
-              <p>Daily</p>
-              <div class="narr-icon">
-                <button class="btn" title="Daily Narrative" value="Daily" disabled>
-                  <img class="img-fluid" id="daily-img" src="images/icons/dIcon.png" alt="Daily Icon">
-                </button>
-              </div>
-              <div class="sub-narr d-flex flex-column"></div>
-            </div>
-            <div id="supernatural" class="col-4">
-              <p>Supernatural</p>
-              <div class="narr-icon">
-                <button class="btn" title="Supernatural Narrative" value="Supernatural" disabled>
-                  <img id="supernatural-img"  class="img-fluid" src="images/icons/sIcon.png" alt="Supernatural Icon">
-                </button>
-              </div>
-              <div class="sub-narr d-flex flex-column"></div>
-            </div>
           </div>
       </section>
 
