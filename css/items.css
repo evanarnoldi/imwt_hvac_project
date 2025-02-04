@@ -204,7 +204,7 @@ button.table-data li.dropdown-item {
 
 tbody {
     --bs-table-bg: var(--quinary-color);
-    --bs-table-hover-bg: var(--tertiary-color);
+    --bs-table-hover-bg: white;
 }
 
 th, td {
