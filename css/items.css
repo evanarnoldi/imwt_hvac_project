@@ -1,11 +1,14 @@
-.page-title {
-    position: relative;
-    display: inline-block;
-}
-
+/* Page Title */
 .page-title-section {
     padding: 36px;
     text-align: center;
+    animation: fadein 0.75s
+}
+
+.page-title {
+    position: relative;
+    display: inline-block;
+    animation: fadein 0.75s
 }
 
 @keyframes lineGrow {
@@ -16,6 +19,16 @@
         width: 100%;
     }
 }
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 /* Main content */
 main {
     display: flex;

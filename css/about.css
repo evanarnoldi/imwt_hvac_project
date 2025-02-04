@@ -1,12 +1,23 @@
+/* Page Title */
+.page-title-section {
+  padding: 36px;
+  text-align: center;
+  animation: fadein 0.75s
+}
+
 .page-title {
   position: relative;
   display: inline-block;
-  overflow: wrap;
+  animation: fadein 0.75s
 }
 
-.page-title-section {
-  padding: 35px;
-  text-align: center;
+@keyframes fadein {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 #card-container {
@@ -17,6 +28,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  animation: fadein 1s
 }
 
 .card {

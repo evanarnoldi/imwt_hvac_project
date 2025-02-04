@@ -1,4 +1,26 @@
- 
+/* Page Title */
+.page-title-section {
+    padding: 36px;
+    text-align: center;
+    animation: fadein 0.75s
+}
+
+.page-title {
+    position: relative;
+    display: inline-block;
+    animation: fadein 0.75s
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
        .content-container {
             flex: 1;
             height: fit-content;
@@ -6,6 +28,7 @@
             gap: 10px;
             background-color: var(--tertiary-color);
             overflow: hidden;
+            animation: fadein 1s
         }
 
         @media (max-width: 1024px) {
@@ -79,6 +102,7 @@
 
         #searchNavbar { 
             margin-right: 55px;
+            animation: fadein 0.75s
         }
 
 

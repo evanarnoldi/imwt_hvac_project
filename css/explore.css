@@ -1,13 +1,23 @@
-.page-title {
-    font-weight: bold;
-    position: relative;
-    display: inline-block;
-    overflow: wrap;
+/* Page Title */
+.page-title-section {
+    padding: 36px;
+    text-align: center;
+    animation: fadein 0.75s
 }
 
-.page-title-section {
-    padding: 35px;
-    text-align: center;
+.page-title {
+    position: relative;
+    display: inline-block;
+    animation: fadein 0.75s
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .col-md-4 {
@@ -29,6 +39,7 @@
     display: flex;
     flex-direction: column;
     min-height: 28.125rem;
+    animation: fadein 1s
 }
 
 .card-body {

@@ -2,12 +2,13 @@
 #page-title-section {
     padding: 35px;
     text-align: center;
+    animation: fadein 0.75s
 }
 
 .page-title {
-    font-weight: bold;
     position: relative;
     display: inline-block;
+    animation: fadein 0.75s
 }
 
 /* Timeline */
