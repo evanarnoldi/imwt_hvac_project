@@ -93,7 +93,7 @@ main {
 }
 
 #artwork-list button {
-    color: white;
+    color: var(--primary-color);
     text-align: left;
     width: fit-content;
 }
@@ -188,6 +188,7 @@ main {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
 button.table-data {
     border: solid 2px black; 
     background-color: var(--primary-color); 
@@ -203,14 +204,14 @@ button.table-data li.dropdown-item {
 
 tbody {
     --bs-table-bg: var(--quinary-color);
-    --bs-table-hover-bg: white;
+    --bs-table-hover-bg: var(--tertiary-color);
 }
 
 th, td {
     text-align: center;
-    text-wrap:pretty;
+    text-wrap: pretty;
     width: 50%;
-    border-bottom: 1px dotted black !important;
+    border-bottom: 1px thick black;
 }
 
 tbody, td, tfoot, th, thead, tr {

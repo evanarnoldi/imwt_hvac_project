@@ -98,7 +98,7 @@ p {
 }
 
 .navbar .navbar-brand {
-    margin-right: auto;
+    margin-right: -50%;
 }
 
 .navbar-nav {

@@ -77,7 +77,7 @@ async function buttonsCheck () {
     moreButton.disabled = false;
 }
 
-// setContent helper funcs
+// update elements with new content
 function updateElements(selector, content) {
     const elements = document.querySelectorAll(selector);
     elements.forEach(el => {
@@ -121,7 +121,7 @@ async function prevItem() {
 }
 
 async function setNarrativeSwitch(item) {
-    // resetting alt narrative section
+    // Clear the alt-narr divs
     document.querySelectorAll("#alt-narr div.sub-narr").forEach((i) => {
         i.innerHTML = "";
     });
